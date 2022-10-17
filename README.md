@@ -36,7 +36,7 @@ Given a URL, constructs a generator that yields raw data from the URL in chunks 
 When running the code for this program from the command line, the user can add optional command line arguments corresponding to a URL and a filename. In this case, the program will save the file indicated by the URL to the specified filename on the user's computer. If the URL indicates a sequence of files, each file in the sequence will be saved as a different file on the user's computer, with the suffix `-file[num]` indicating its order in the sequence (e.g. `filename-file1`, `filename-file2`, etc.).
 
 ## Boolean Satisfiability Solving
-Given a Boolean formula in [conjunctive normal form](https://en.wikipedia.org/wiki/Conjunctive_normal_form) (CNF), returns either a satisfying assignment of the Boolean variables or None if no such assignment exists.
+Given a Boolean formula in [conjunctive normal form](https://en.wikipedia.org/wiki/Conjunctive_normal_form) (CNF), returns either a satisfying assignment of the Boolean variables or `None` if no such assignment exists.
 
 Additionally, given a room scheduling problem, converts the problem into a Boolean formula. The room scheduling problem is represented as two dictionaries: one mapping people's names to room preferences, the other mapping rooms to their numerical capacities.
 
@@ -48,6 +48,11 @@ Given a map dataset from [OpenStreetMap](https://www.openstreetmap.org/about), f
 - Given two predetermined nodes on the map, returns the shortest path between them
 - Given two locations in (latitude, longitude) form, returns the shortest path in terms of distance between them
 - Given two locations in (latitude, longitude) form, returns the shortest path in terms of time (i.e. takes speed limits into account) between them
+
+## Sokoban Solver
+Given a level description for the puzzle game [Sokoban](https://en.wikipedia.org/wiki/Sokoban), returns a list representing the shortest sequence of moves to solve the level or `None` if no solution exists.
+
+The solver function utilizes BFS to find the shortest possible sequence of moves.
 
 ## Image Manipulation
 Given images represented as a list of pixels, performs various manipulations on those images. These manipulations include:
