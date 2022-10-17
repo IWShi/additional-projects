@@ -1,4 +1,6 @@
 # Additional Projects
+Additional projects I have completed that are not located in any of my public repos.
+
 *Code available for all projects upon request.*
 ## *Baba Is You* Lite
 Implements the rules for a video game based on the existing game *Baba Is You*. 
