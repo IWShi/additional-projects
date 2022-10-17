@@ -16,7 +16,7 @@ Given code written in a basic version of LISP, interprets and evaluates the give
 - Creating and manipulating linked lists (e.g. concatenating linked lists, finding the nth element of linked lists, etc.)
 - Using conditional expressions (e.g. `if`, `and`, `or`)
 - Defining functions
-- Evaluating functions
+- Evaluating (potentially nested) functions
 
 When running the program from the command line, there is also the option to add command line arguments corresponding to filenames. These files will be interpreted and evaluated before dropping into the REPL (i.e. the functions/variables in the files will be pre-loaded into the REPL's environment).
 
