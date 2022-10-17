@@ -3,7 +3,7 @@ Additional projects I have completed that are not located in any of my public re
 
 *Code available for all projects upon request.*
 ## *Baba Is You* Lite
-Implements the rules for a video game based on the existing game *Baba Is You*. 
+Implements the rules for a video game based on the existing game [*Baba Is You*](https://babaiswiki.fandom.com/wiki/Baba_Is_You_Wiki). 
 
 *Baba Is You* is a puzzle game in which the player works to achieve
 a win state by manipulating the environment in certain ways specified by the rules. However, the player is also allowed to manipulate the rules themselves.
