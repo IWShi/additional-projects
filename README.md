@@ -16,9 +16,9 @@ Given code written in a basic version of LISP, interprets and evaluates the give
 - Creating and manipulating linked lists (e.g. concatenating linked lists, finding the nth element of linked lists, etc.)
 - Using conditional expressions (e.g. `if`, `and`, `or`)
 - Defining functions
-- Evaluating (potentially nested) function calls
+- Evaluating function calls
 
-When running the program from the command line, there is also the option to add command line arguments corresponding to filenames. These files will be interpreted and evaluated before dropping into the REPL (i.e. the functions/variables in the files will be pre-loaded into the REPL's environment).
+When running the program from the command line, there is also the option to add command line arguments corresponding to filenames. These files will be interpreted and evaluated before dropping into the REPL (i.e. the functions/variables in the files will be pre-loaded into the REPL environment).
 
 ## Symbolic Algebra Calculator
 Given an expression of symbolic algebra that can contain either variables or numbers, can perform various operations on the expression, including:
@@ -31,14 +31,14 @@ Each of these operations returns a new symbolic algebra expression.
 This program allows users to manually input symbolic alegbra expressions as strings. The following operators are supported by the parser: `+`, `-`, `*`, `/`, and `**` (exponentiation).
 
 ## File Downloader
-Given a URL, constructs a generator that yields raw data from the URL in chunks of predetermined size (can be user-specified). This allows the user to start receiving data without having to wait for the whole file to download. This program supports yielding data from single files, sequences of files, and manifests. No data will be cached, except in the case where the program is yielding data from a manifest file and the manifest specifically indicates that a certain piece of data should be cached.
+Given a URL, constructs a generator that yields raw data from the URL in chunks of predetermined size (can be user-specified). This allows the user to start receiving data without having to wait for the whole file to be downloaded. This program supports yielding data from single files, sequences of files, and manifests. No data will be cached, except in the case where the program is yielding data from a manifest file and the manifest specifically indicates that a certain piece of data should be cached.
 
 When running the code for this program from the command line, the user can add optional command line arguments corresponding to a URL and a filename. In this case, the program will save the file indicated by the URL to the specified filename on the user's computer. If the URL indicates a sequence of files, each file in the sequence will be saved as a different file on the user's computer, with the suffix `-file[num]` indicating its order in the sequence (e.g. `filename-file1`, `filename-file2`, etc.).
 
 ## Boolean Satisfiability Solving
 Given a Boolean formula in [conjunctive normal form](https://en.wikipedia.org/wiki/Conjunctive_normal_form) (CNF), returns either a satisfying assignment of the Boolean variables or `None` if no such assignment exists.
 
-Additionally, given a room scheduling problem, converts the problem into a Boolean formula. The room scheduling problem is represented as two dictionaries: one mapping people's names to room preferences, the other mapping rooms to their numerical capacities.
+Additionally, given a room scheduling problem, converts the problem into a Boolean formula. The room scheduling problem is represented as two dictionaries: one dictionary mapping people's names to room preferences, and the other mapping rooms to their numerical capacities.
 
 ## N-Dimensional Minesweeper
 Implements the rules for playing a game of N-dimensional Minesweeper, where N is any positive integer. This program uses recursion to extend the logic of 2D Minesweeper to any number of dimensions. The rules of N-dimensional Minesweeper are the same as those of 2D Minesweeper. There are some number of bombs located throughout the game board. The player's job is to dig up all the squares without bombs while avoiding all the bomb-filled squares. Each dug-up square displays a number indicating the total number of bombs in neighboring squares. If a player digs up a bomb-less square whose neighbors are all also bomb-less, the neighboring squares are automatically dug up for the player. 
@@ -55,7 +55,7 @@ Given a level description for the puzzle game [Sokoban](https://en.wikipedia.org
 The solver function utilizes BFS to find the shortest possible sequence of moves.
 
 ## Image Manipulation
-Given images represented as a list of pixels, performs various manipulations on those images. These manipulations include:
+Given images represented as lists of pixels, performs various manipulations on those images. These manipulations include:
 - Applying an inversion filter to the image
 - Blurring the image
 - Sharpening the image
@@ -65,7 +65,7 @@ Given images represented as a list of pixels, performs various manipulations on 
 These manipulations can be used on both greyscale and color images.
 
 ## Audio Manipulation
-Given audio files represented as a list of audio samples sampled at a set rate, performs various manipulations on those files. These manipulations include:
+Given audio files represented as lists of audio samples sampled at a set rate, performs various manipulations on those files. These manipulations include:
 - Reversing the sound
 - Mixing two sounds together
 - Adding echoes to a sound
