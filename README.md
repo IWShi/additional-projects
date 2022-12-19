@@ -71,4 +71,7 @@ Given audio files represented as lists of audio samples sampled at a set rate, p
 - Adding echoes to a sound
 - Adding a pan effect
 
+## RISC-V Processor
+Implements a RISC-V processor in Minispec, a hardware language closely related to Bluespec. So-called "magic memory" modules are used to allow all instructions to be executed in a single cycle.
+
 
